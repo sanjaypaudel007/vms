@@ -3,6 +3,7 @@ package com.practice.vms.entity;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.OneToOne;
 import javax.validation.Valid;
 
 import org.hibernate.validator.constraints.NotEmpty;
@@ -18,6 +19,7 @@ public class Staff {
 	@NotEmpty 
 	private String post;
 	@NotEmpty 
+	@OneToOne
 	private Address address;
 	@NotEmpty 
 	private Long phone;
